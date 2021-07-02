@@ -1,5 +1,5 @@
 //NDWI Colourisation from NDMI script
-if (B03 == 0 || B03 == 0){
+if (B08 == 0 || B03 == 0){
   return [0,0,0];
 } else {
   var val = (B03 - B08)/(B03 + B08);
