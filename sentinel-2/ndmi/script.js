@@ -1,7 +1,8 @@
-if (B8A == 0 || B11 == 0){
+//NDWI Colourisation from NDMI script
+if (B03 == 0 || B03 == 0){
   return [0,0,0];
 } else {
-  var val = (B8A - B11)/(B8A + B11);
+  var val = (B03 - B08)/(B03 + B08);
   
   var vmin = -0.8;
   var vmax = 0.8;
