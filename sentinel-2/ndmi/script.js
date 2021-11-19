@@ -2,10 +2,10 @@
 if (B08 == 0 || B03 == 0){
   return [0,0,0];
 } else {
-  var val = (B03 - B08)/(B03 + B08);
+  var val = B08;
   
-  var vmin = -0.8;
-  var vmax = 0.8;
+  var vmin = 0;
+  var vmax = 4000;
   var dv = vmax - vmin;
   
   var r = 0.0;
@@ -22,10 +22,10 @@ if (B08 == 0 || B03 == 0){
     v = vmax;
   }
   
-  var l1 = 0.35;
-  var l2 = 0.48;
-  var l3 = 0.52;
-  var l4 = 0.65;
+  var l1 = 0.25;
+  var l2 = 0.499;
+  var l3 = 0.501;
+  var l4 = 0.75;
   
   var level1 = (vmin + l1 * dv);
   var level2 = (vmin + l2 * dv);
